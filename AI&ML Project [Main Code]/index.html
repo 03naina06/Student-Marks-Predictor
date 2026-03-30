@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1> Student Performance Dashboard</h1>
+
+    <div class="form-container">
+        <label>Study Hours</label>
+        <input type="number" id="studyHours">
+
+        <label>Attendance (%)</label>
+        <input type="number" id="attendance">
+
+        <label>Assignments Completion (%)</label>
+        <input type="number" id="assignments">
+
+        <label>Previous Marks (%)</label>
+        <input type="number" id="previousMarks">
+
+        <label>Sleep Hours</label>
+        <input type="number" id="sleepHours">
+
+        <label>Screen Time (hrs/day)</label>
+        <input type="number" id="screenTime">
+
+        <button id="predictBtn">Predict Marks</button>
+    </div>
+
+    <div class="result-container">
+        <h2>Predicted Marks: <span id="predictedMarks">--</span></h2>
+        <p id="trendText"></p>
+
+        <div id="aiSuggestion" class="ai-box"></div>
+
+        <button id="detailBtn" class="detail-btn">Get Detailed Analysis</button>
+        <div id="detailedSuggestion" class="detail-box"></div>
+    </div>
+
+    <canvas id="marksChart"></canvas>
+
+    <div class="center-btn">
+        <button id="resetBtn" class="reset-btn">Reset Graph</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #d9e4f5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 520px;
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 13px;
+}
+
+input {
+    padding: 11px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Buttons */
+#predictBtn {
+    background: #2563eb;
+    color: white;
+}
+
+.detail-btn {
+    background: #16a34a;
+    color: white;
+    margin-top: 10px;
+}
+
+.reset-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Result */
+.result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* AI Box */
+.ai-box {
+    padding: 10px;
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+/* Detailed Report */
+.detail-box {
+    margin-top: 10px;
+    padding: 15px;
+    background: #f0fdf4;
+    border-left: 5px solid #16a34a;
+    border-radius: 10px;
+    font-size: 13px;
+    text-align: left;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-weight: bold;
+    color: #166534;
+}
+
+canvas {
+    margin-top: 20px;
+}
